@@ -2,8 +2,9 @@ var express = require("express")
 var app = express()
 var bodyParser = require("body-parser")
 const axios = require("axios");
-const API_KEY = "5769150315:AAF7QqCXBYA5cd-CYdXjVMCqNnPeOfshhDM";
+const API_KEY = process.env.API_KEY;
 const request = require('request');
+require('dotenv').config();
 
 app.use(bodyParser.json()) 
 app.use(
